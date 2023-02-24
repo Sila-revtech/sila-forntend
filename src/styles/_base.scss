@@ -1,0 +1,37 @@
+// -------------------  colour variables
+
+$nav-background: #f2f6ff;
+$screen-background: #d9e4ff;
+$color-primary-300: #a6c1ff;
+$color-primary-400: #598bff;
+$color-primary-500: #3366ff;
+$main-accent: #274bdb;
+$hover-over: #1a34b8;
+$color-primary-800: #102694;
+$color-primary-900: #091c7a;
+$font-colour: #000000;
+
+
+// --------------------  global settings
+
+*,
+before,
+after {
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;  // ------------------- 1rem = 10px
+}
+
+
+body {
+  line-height: 1.5rem;
+  font-family: 'nunito', 'sans-serif';
+  font-weight: 400;
+  background: $screen-background;
+}
