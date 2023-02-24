@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SidenavComponent } from "./sidenav/sidenav.component";
-import { ToolbarComponent } from "./toolbar/toolbar.component";
+import { NavigationComponent } from "./navigation/navigation.component";
+
+
 
 const routes: Routes = [
-  { path: 'sidenav', component: SidenavComponent },
-  { path: 'toolbar', component: ToolbarComponent }
+  {
+    path: '',
+    component: NavigationComponent,
+
+  }
 ];
 
 @NgModule({
@@ -13,7 +17,7 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   exports: [
-    RouterModule
+    RouterModule,
   ]
 })
 export class NavigationRoutingModule { }

@@ -1,0 +1,37 @@
+<mat-sidenav-container>
+  <mat-sidenav>
+    <mat-nav-list>
+
+      <mat-list-item (click)="isExpanded = !isExpanded">
+        <mat-icon></mat-icon>
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['./billing']" >
+<!--        <mat-icon></mat-icon>-->
+        <span>Billing</span>
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['./set-up']">
+<!--        <mat-icon></mat-icon>-->
+        <span>Set Up</span>
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['./dashboard']">
+<!--        <mat-icon></mat-icon>-->
+        <span>Dashboard</span>
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['./traffic-control']">
+<!--        <mat-icon></mat-icon>-->
+        <span>Traffic Control</span>
+      </mat-list-item>
+
+      <mat-list-item [routerLink]="['./click-log']">
+<!--        <mat-icon></mat-icon>-->
+        <span>Fraud Report</span>
+      </mat-list-item>
+
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>
+<router-outlet></router-outlet>
