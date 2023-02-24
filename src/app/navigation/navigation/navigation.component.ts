@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
-    isExpanded: boolean = false;
+    isExpanded: boolean = true;
 
 }
